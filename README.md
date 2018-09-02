@@ -6,7 +6,7 @@
 
 Tweak provides when/then clauses to your context in described state.
 
-##Installation
+## Installation
 
 Add the following to your `Cargo.toml`:
 
@@ -15,7 +15,7 @@ Add the following to your `Cargo.toml`:
 tweak = "*"
 ```
 
-##Examples
+## Examples
 
 Simple context manipulation.
 
