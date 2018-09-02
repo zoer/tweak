@@ -1,0 +1,18 @@
+[package]
+name = "tweak"
+version = "0.1.0"
+authors = ["Oleg Yashchuk <oazoer@gmail.com>"]
+description = "when/then clauses to run"
+readme = "README.md"
+documentation = "https://docs.rs/tweak"
+homepage = "https://github.com/zoer/tweak"
+repository = "https://github.com/zoer/tweak.git"
+license = "MIT"
+
+[dependencies]
+
+[badges]
+travis-ci = { repository = "zoer/tweak" }
+
+[[example]]
+name = "usage"
