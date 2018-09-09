@@ -1,6 +1,6 @@
 [package]
 name = "tweak"
-version = "0.1.0"
+version = "0.1.1"
 authors = ["Oleg Yashchuk <oazoer@gmail.com>"]
 description = "when/then clauses to run"
 readme = "README.md"
