@@ -31,24 +31,24 @@
 //!
 //! let mut xy = XY::new(5, 0);
 //! let res = Case::<XY, &str>::new("coords")
-//!     .when("x > 0", |ctx| Ok(ctx.x > 0))
+//!     .when("x > 0", |xy| Ok(xy.x > 0))
 //!     .then_case("tweak x", |case| {
-//!         case.when("x == 5", |ctx| Ok(ctx.x == 5))
-//!             .then("multiply x by 3", |ctx| {
-//!                 ctx.x *= 3;
+//!         case.when("x == 5", |xy| Ok(xy.x == 5))
+//!             .then("multiply x by 3", |xy| {
+//!                 xy.x *= 3;
 //!                 Ok(())
 //!             })
-//!             .when("when x > 10", |ctx| Ok(ctx.x > 10))
-//!             .then("set x to 10", |ctx| {
-//!                 ctx.x = 10;
+//!             .when("when x > 10", |xy| Ok(xy.x > 10))
+//!             .then("set x to 10", |xy| {
+//!                 xy.x = 10;
 //!                 Ok(())
 //!             })
 //!     })
-//!     .when("y > 0", |ctx| Ok(ctx.y > 0))
+//!     .when("y > 0", |xy| Ok(xy.y > 0))
 //!     .then_case("tweak y", |case| {
-//!         case.when("y > 0", |ctx| Ok(ctx.y > 0))
-//!             .then("divide 10 by y", |ctx| {
-//!                 ctx.y = 10 / ctx.y;
+//!         case.when("y > 0", |xy| Ok(xy.y > 0))
+//!             .then("divide 10 by y", |xy| {
+//!                 xy.y = 10 / xy.y;
 //!                 Ok(())
 //!             })
 //!     })
